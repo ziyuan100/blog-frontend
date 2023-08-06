@@ -1,4 +1,4 @@
-import { AppBar, Toolbar, IconButton, Typography, Button } from "@mui/material";
+import { AppBar, Toolbar, IconButton, Typography, Button, Link } from "@mui/material";
 import MenuIcon from '@mui/icons-material/menu';
 
 export default function Navbar(){
@@ -15,7 +15,9 @@ export default function Navbar(){
                 <MenuIcon />
             </IconButton>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
-                Blog
+                <Link color="inherit" underline="none" href="/">
+                    Blog
+                </Link>
             </Typography>
             <Button color="inherit" href="/login">Login</Button>
             </Toolbar>

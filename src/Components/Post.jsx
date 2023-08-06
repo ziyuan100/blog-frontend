@@ -10,8 +10,9 @@ export default function Post({ postObj }) {
           </Typography>
           <Box className="tags">
             Tags:
-            {postObj.tags.map((link, i) => (
-              <Link key={i} sx={{ml: 1}}>{link.toUpperCase()}</Link>
+            {postObj.tags.map((tag, i) => (
+              // the link href might come back to bite me in the ass, since tag can have spacing.. TODO fix
+              <Link key={i} href={`/category/${tag}`} sx={{ml: 1}}>{tag.toUpperCase()}</Link>
             ))}
           </Box>
           <Typography variant='body1' sx={{maxWidth: 1000, my: 3}}>

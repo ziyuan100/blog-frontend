@@ -1,24 +1,18 @@
 /* eslint-disable react/prop-types */
 import './App.css';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
+import Login from './Pages/Login'
 
 function App() {
 
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/login" element={<Login />} />
+      <Route path="/category/:tag" element={<Home />} />
+      <Route path="/login" element={<Login />} /> 
       <Route path="*" element={<InvalidPage />} />
     </Routes>
-  )
-}
-
-
-
-function Login(){
-  return(
-    <h1>Login Test!</h1>
   )
 }
 
