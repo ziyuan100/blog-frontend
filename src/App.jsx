@@ -3,6 +3,7 @@ import './App.css';
 import { Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login'
+import New from './Pages/New';
 
 function App() {
 
@@ -10,7 +11,8 @@ function App() {
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/category/:tag" element={<Home />} />
-      <Route path="/login" element={<Login />} /> 
+      <Route path="/login" element={<Login />} />
+      <Route path="/new" element={<New />}/>
       <Route path="*" element={<InvalidPage />} />
     </Routes>
   )

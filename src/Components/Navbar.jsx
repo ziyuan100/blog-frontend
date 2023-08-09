@@ -19,6 +19,7 @@ export default function Navbar(){
                     Blog
                 </Link>
             </Typography>
+            <Button color="inherit" href="/new">New Post</Button>
             <Button color="inherit" href="/login">Login</Button>
             </Toolbar>
         </AppBar>

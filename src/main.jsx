@@ -12,13 +12,16 @@ const theme = createTheme({
     },
     secondary: {
       main: "#e5a5c0"
+    },
+    background: {
+      default: "#e5a5c0"
     }
   },
   typography: {
     body1: {
       fontSize: "1.1em"
     }
-  }
+  },
 })
 
 ReactDOM.createRoot(document.getElementById('root')).render(
