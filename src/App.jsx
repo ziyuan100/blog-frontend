@@ -4,6 +4,7 @@ import { Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
 import Login from './Pages/Login'
 import New from './Pages/New';
+import Edit from './Pages/Edit';
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Route path="/category/:tag" element={<Home />} />
       <Route path="/login" element={<Login />} />
       <Route path="/new" element={<New />}/>
+      <Route path="/edit/:id" element={<Edit />} />
       <Route path="*" element={<InvalidPage />} />
     </Routes>
   )
